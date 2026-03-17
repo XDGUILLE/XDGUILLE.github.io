@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  text-align: center;
+  background: linear-gradient(135deg, #2a2d3a 0%, #1b1d24 100%);
+  min-height: 100vh;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App img{
+  width: 180px;
+  margin-top:  10px;
+}
+
+.App p{
+  font-size: 1.4rem;
+  margin-bottom:  15px;
+}
+
+.App hr{
+  width: 60%;
+  margin: 20px auto;
+  border: solid #61dafb;
+}
+
+.App input{
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  text-align: center; 
+  width: 200px;
+  margin-bottom: 15px;
+  background: #f0f0f0;
+}
+
+.App button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color:  #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+.App h1{
+  color: #61dafb;
+  font-size: 3rem;
+}
