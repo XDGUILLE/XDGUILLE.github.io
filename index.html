@@ -1,131 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Web</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="Portafolio de Guillermo Ventura, desarrollador web. Explora proyectos de JavaScript, React y aplicaciones web.">
+  <title>Guillermo Ventura | Desarrollador Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="navbar" class="nav">
-        <ul class="nav-list">
-            <li><a href="#welcome-section">Acerca</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contactos</a></li>
-        </ul>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-icon">&lt;/&gt;</span> GV<span class="brand-dot">.</span><span class="brand-label">dev</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact" class="nav-contact">Hablemos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
     </nav>
-    <section id="welcome-section" class="welcome-section">
-        <h1>Hola, soy Guillermo Ventura</h1>
-        <p>Desarrollador Web</p>
-    </section>
-    <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">
-            Algunos de mis proyectos
-        </h2>
-        <div class= "projects-grid">
-            <a href= "https://xdguille.github.io/calculadora" target= "_blank" rel="noopener" class="project">
-                <img
-                class="project-image"
-                src="calculadora.png"
-                alt="Proyecto Calculadora"
-                />
-                <p class="project-title">
-                    <span>&lt;</span>
-                        Calculadora de MRUV
-                    <span>&#47;&gt;</span>
-                </p>
-            </a>
-            <a href= "https://xdguille.github.io/banco" target= "_blank" rel="noopener" class="project">
-                <img
-                class="project-image"
-                src="banco.png"
-                alt="Proyecto pagina de un banco"
-                />
-                <p class="project-title">
-                    <span>&lt;</span>
-                        Pagina de un Banco con JSON
-                    <span>&#47;&gt;</span>
-                </p>
-            </a>
-            <a href= "https://xdguille.github.io/productos" target= "_blank" rel="noopener" class="project">
-                <img
-                class="project-image"
-                src="productos.png"
-                alt="Proyecto conexion con un Servidor"
-                />
-                <p class="project-title">
-                    <span>&lt;</span>
-                        Administrador de productos
-                    <span>&#47;&gt;</span>
-                </p>
-            </a>
-            <a href= "https://github.com/XDGUILLE/JAVASCRIPT1225/tree/main/87%20-%20ACERTIJO/mi-app" target= "_blank" rel="noopener" class="project">
-                <img
-                class="project-image"
-                src="numero.png"
-                alt="Proyecto adivina el numero"
-                />
-                <p class="project-title">
-                    <span>&lt;</span>
-                        Juego que Adivina el Numero con REACT
-                    <span>&#47;&gt;</span>
-                </p>
-            </a>
-            <a href= "https://github.com/XDGUILLE/JAVASCRIPT1225/tree/main/netflix-app" target= "_blank" rel="noopener" class="project">
-                <img
-                class="project-image"
-                src="netflix.png"
-                alt="Proyecto clon de netflix"
-                />
-                <p class="project-title">
-                    <span>&lt;</span>
-                        Clon de Netflix
-                    <span>&#47;&gt;</span>
-                </p>
-            </a>
-            <a href= "https://xdguille.github.io/vet" target= "_blank" rel="noopener" class="project">
-                <img
-                class="project-image"
-                src="vet.png"
-                alt="Veterinaria"
-                />
-                <p class="project-title">
-                    <span>&lt;</span>
-                        Veterinaria
-                    <span>&#47;&gt;</span>
-                </p>
-            </a>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-pulse"></span> PORTAFOLIO / DESARROLLO WEB</div>
+        <p class="hero-kicker">Hola, soy Guillermo Ventura <span class="wave">✳</span></p>
+        <h1>Construyo ideas<br>en <span class="gradient-text">experiencias</span><br>digitales<span class="accent-period">.</span></h1>
+        <p class="hero-description">Desarrollador web enfocado en crear interfaces modernas, funcionales y experiencias que hacen que cada proyecto destaque.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explorar proyectos <i class="fa-solid fa-arrow-down-right"></i></a>
+          <a href="#contact" class="btn btn-outline">Contactarme <i class="fa-regular fa-paper-plane"></i></a>
         </div>
-        <a href= "https://github.com/XDGUILLE?tab=repositories" class= "btn-show-all" target= "_blank" rel="noopener">Ver todos <i class="fas fa-chevron-right"></i></a> 
-    </section>
-    <section id="contact" class="contact-section">
-        <div class="contact-section-header">
-            <h2>Trabajemos juntos...</h2>
-            <p>Como tomas tu cafe?</p>
+        <div class="hero-stats"><div><strong>06</strong><span>Proyectos publicados</span></div><div class="stat-rule"></div><div><strong>Web</strong><span>Desarrollo y diseño</span></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Ilustración de un entorno de desarrollo web">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="code-window">
+          <div class="window-top"><div class="window-dots"><span></span><span></span><span></span></div><span>portfolio.js</span><i class="fa-solid fa-code"></i></div>
+          <div class="code-body">
+            <div><span class="line-no">01</span><span class="syntax-pink">const</span> <span class="syntax-blue">developer</span> = {</div>
+            <div><span class="line-no">02</span>&nbsp; name: <span class="syntax-green">'Guillermo Ventura'</span>,</div>
+            <div><span class="line-no">03</span>&nbsp; role: <span class="syntax-green">'Web Developer'</span>,</div>
+            <div><span class="line-no">04</span>&nbsp; passion: <span class="syntax-green">'Crear & innovar'</span>,</div>
+            <div><span class="line-no">05</span>&nbsp; stack: [<span class="syntax-green">'JS'</span>, <span class="syntax-green">'React'</span>],</div>
+            <div><span class="line-no">06</span>&nbsp; available: <span class="syntax-purple">true</span></div>
+            <div><span class="line-no">07</span>};</div>
+            <div><span class="line-no">08</span><span class="syntax-muted">// Hagamos algo increíble_</span><span class="caret"></span></div>
+          </div>
+          <div class="terminal-footer"><span><span class="terminal-dot"></span> SYSTEM ONLINE</span><span>UTF-8 &nbsp; JS</span></div>
         </div>
-        <div class="contact-links">
-            <a href="https://www.facebook.com/guillermo.v.piriz" target="_blank" rel="noopener" class="contact-details">
-                <i class="fa-brands fa-facebook-f"></i>
-                FaceBook
-            </a>
-            <a href="https://github.com/XDGUILLE" target="_blank" rel="noopener" class="contact-details">
-                <i class="fa-brands fa-github"></i>
-                Github
-            </a>
-            <a href="mailto:luisguillermoventurapiriz360@gmail.com" target="_blank" rel="noopener" class="contact-details">
-                <i class="fas fa-at"></i>
-                Enviar Correo
-            </a>
-            <a href="https://wa.me/50237695347" target="_blank" rel="noopener" class="contact-details">
-                <i class="fa-solid fa-phone"></i>
-                Llamar 
-            </a>
-        </div>
+        <div class="floating-chip chip-react"><i class="fa-brands fa-react"></i> React</div>
+        <div class="floating-chip chip-code"><i class="fa-solid fa-bolt"></i> Creative coding</div>
+      </div>
+      <a class="scroll-cue" href="#sobre-mi"><span>SCROLL PARA EXPLORAR</span><i class="fa-solid fa-arrow-down"></i></a>
     </section>
-    <footer>
-        <p><i class="fa-solid fa-copyright"></i> Todos los derechos reservados <a href="#"> Guillermo Ventura</a></p>
-    </footer>
+
+    <section class="about-section" id="sobre-mi"><div class="container about-grid">
+      <div><p class="section-kicker"><span>01 /</span> SOBRE MÍ</p><h2>La tecnología es mi forma de <span class="gradient-text">crear.</span></h2></div>
+      <div class="about-right"><p>Me apasiona transformar ideas en soluciones digitales. Disfruto explorar nuevas herramientas, resolver problemas y construir aplicaciones que combinan diseño y funcionalidad.</p><div class="skill-list"><span><i class="fa-brands fa-html5"></i> HTML</span><span><i class="fa-brands fa-css3-alt"></i> CSS</span><span><i class="fa-brands fa-js"></i> JavaScript</span><span><i class="fa-brands fa-react"></i> React</span><span><i class="fa-brands fa-git-alt"></i> Git</span></div></div>
+    </div></section>
+
+    <section class="projects-section" id="projects"><div class="container">
+      <div class="section-heading"><div><p class="section-kicker"><span>02 /</span> TRABAJOS SELECCIONADOS</p><h2>Proyectos <span class="gradient-text">destacados.</span></h2><p class="heading-description">Una selección de aplicaciones, experimentos y soluciones desarrolladas.</p></div><div class="heading-counter">[ 01 — 06 ]</div></div>
+      <div class="projects-grid">
+        <a class="project" href="https://xdguille.github.io/calculadora" target="_blank" rel="noopener noreferrer"><div class="project-art art-violet"><div class="art-icon"><i class="fa-solid fa-calculator"></i></div><img src="calculadora.png" alt="Captura de la calculadora de MRUV" loading="lazy" onerror="this.hidden=true"><span class="project-number">01 / 06</span><span class="art-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></div><div class="project-info"><div><span class="project-kind">APLICACIÓN WEB</span><h3>Calculadora de MRUV</h3><p>Herramienta para cálculos de movimiento rectilíneo uniformemente variado.</p></div><div class="tags"><span>JavaScript</span><span>HTML / CSS</span></div></div></a>
+        <a class="project" href="https://xdguille.github.io/banco" target="_blank" rel="noopener noreferrer"><div class="project-art art-blue"><div class="art-icon"><i class="fa-solid fa-building-columns"></i></div><img src="banco.png" alt="Captura de la página de banco" loading="lazy" onerror="this.hidden=true"><span class="project-number">02 / 06</span><span class="art-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></div><div class="project-info"><div><span class="project-kind">INTERFAZ WEB</span><h3>Página bancaria con JSON</h3><p>Proyecto de interfaz financiera con manejo de datos en formato JSON.</p></div><div class="tags"><span>JSON</span><span>JavaScript</span></div></div></a>
+        <a class="project" href="https://xdguille.github.io/productos" target="_blank" rel="noopener noreferrer"><div class="project-art art-teal"><div class="art-icon"><i class="fa-solid fa-boxes-stacked"></i></div><img src="productos.png" alt="Captura del administrador de productos" loading="lazy" onerror="this.hidden=true"><span class="project-number">03 / 06</span><span class="art-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></div><div class="project-info"><div><span class="project-kind">APLICACIÓN WEB</span><h3>Administrador de productos</h3><p>Interfaz para gestionar productos y trabajar con información de un servidor.</p></div><div class="tags"><span>JavaScript</span><span>Servidor</span></div></div></a>
+        <a class="project" href="https://github.com/XDGUILLE/JAVASCRIPT1225/tree/main/87%20-%20ACERTIJO/mi-app" target="_blank" rel="noopener noreferrer"><div class="project-art art-pink"><div class="art-icon"><i class="fa-solid fa-gamepad"></i></div><img src="numero.png" alt="Captura del juego de adivinanza" loading="lazy" onerror="this.hidden=true"><span class="project-number">04 / 06</span><span class="art-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></div><div class="project-info"><div><span class="project-kind">JUEGO INTERACTIVO</span><h3>Adivina el número</h3><p>Minijuego interactivo desarrollado con componentes de React.</p></div><div class="tags"><span>React</span><span>JavaScript</span></div></div></a>
+        <a class="project" href="https://github.com/XDGUILLE/JAVASCRIPT1225/tree/main/netflix-app" target="_blank" rel="noopener noreferrer"><div class="project-art art-red"><div class="art-icon"><i class="fa-solid fa-clapperboard"></i></div><img src="netflix.png" alt="Captura del clon de Netflix" loading="lazy" onerror="this.hidden=true"><span class="project-number">05 / 06</span><span class="art-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></div><div class="project-info"><div><span class="project-kind">INTERFAZ / ENTRETENIMIENTO</span><h3>Clon de Netflix</h3><p>Diseño inspirado en una plataforma de streaming audiovisual.</p></div><div class="tags"><span>Frontend</span><span>UI</span></div></div></a>
+        <a class="project" href="https://xdguille.github.io/vet" target="_blank" rel="noopener noreferrer"><div class="project-art art-orange"><div class="art-icon"><i class="fa-solid fa-paw"></i></div><img src="vet.png" alt="Captura del proyecto de veterinaria" loading="lazy" onerror="this.hidden=true"><span class="project-number">06 / 06</span><span class="art-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></div><div class="project-info"><div><span class="project-kind">SITIO WEB</span><h3>Veterinaria</h3><p>Proyecto de sitio web orientado a servicios veterinarios.</p></div><div class="tags"><span>Diseño web</span><span>Frontend</span></div></div></a>
+      </div>
+      <div class="all-projects"><a href="https://github.com/XDGUILLE?tab=repositories" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Ver todos mis repositorios <i class="fa-brands fa-github"></i></a></div>
+    </div></section>
+
+    <section class="contact-section" id="contact"><div class="container"><div class="contact-panel"><p class="section-kicker"><span>03 /</span> CONTACTO</p><div class="contact-panel-grid"><div><h2>¿Tienes una idea?<br><span class="gradient-text">Hagámosla realidad.</span></h2><p>Estoy abierto a conversar sobre proyectos, oportunidades y nuevas ideas.</p><a class="btn btn-primary" href="mailto:luisguillermoventurapiriz360@gmail.com?subject=Hablemos%20de%20un%20proyecto">Enviar un correo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="social-links"><a href="https://github.com/XDGUILLE" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://www.facebook.com/guillermo.v.piriz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i> Facebook <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://wa.me/50237695347" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span><span class="brand-icon">&lt;/&gt;</span> Guillermo Ventura</span><span>© <span id="year">2026</span> · Diseñado con código y creatividad.</span><a href="#inicio">Volver arriba <i class="fa-solid fa-arrow-up"></i></a></div></footer>
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const opened = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!opened));
+      menuButton.setAttribute('aria-label', opened ? 'Abrir menú' : 'Cerrar menú');
+      menuButton.innerHTML = opened ? '<i class="fa-solid fa-bars"></i>' : '<i class="fa-solid fa-xmark"></i>';
+      navLinks.classList.toggle('is-open', !opened);
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); menuButton.setAttribute('aria-label', 'Abrir menú'); menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+      }), { threshold: .08 });
+      document.querySelectorAll('.project, .section-heading, .about-grid, .contact-panel').forEach(el => { el.classList.add('reveal'); observer.observe(el); });
+    }
+  </script>
 </body>
 </html>
